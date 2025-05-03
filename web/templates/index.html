@@ -7,6 +7,22 @@
 	<link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
 </head>
 <body>
-
+	<nav class="nav">
+		<div class="logo">
+			<img src="{{ nav_logo }}">
+			{{ nav_title }}
+			<ul>
+				<li><a href="">About</a></li>
+				<li><a href="">Futures</a></li>
+				<li><a href="">Premium</a></li>
+				<li><a href="{{ nav_discord_url }}">Discord</a></li>
+			</ul>
+			{% if user_logged %}
+				<a href=""><button>Panel</button></a>
+			{% else %}
+				<a href=""><button>Login</button></a>
+			{% endif %}
+		</div>
+	</nav>
 </body>
 </html>
