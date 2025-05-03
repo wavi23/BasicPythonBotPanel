@@ -3,17 +3,7 @@
 ## `📁` Project Structure
 
 ```
-|-- bot
-| |-- cogs/ # Moduły/cogi bota
-| |-- config.py # Ustawienia bota (TOKEN, CHANNEL_ID itd.)
-| |-- main.py # Główna logika bota
-|-- web
-| |-- app.py # Panel webowy (Flask)
-| |-- config.py # (opcjonalny) config do panelu
-| |-- static/
-| | |-- css/index.css # Style CSS
-| | |-- js/ # (opcjonalnie) skrypty JS
-| |-- templates/index.html # Szablon HTML
+jeszcze predko tu nic nie bedzie
 ```
 
 ---
