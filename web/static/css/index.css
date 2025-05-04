@@ -34,3 +34,7 @@ body {
 	background-color: var(--color-background);
 	color: var(--text-0);
 }
+
+ul {
+	list-style: none;
+}
