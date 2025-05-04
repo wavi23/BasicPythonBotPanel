@@ -1,16 +1,27 @@
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 100%;
+	height: calc(100vh - 110px);
+}
+
 .cards {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	gap: 25px;
 	flex-wrap: wrap;
-	width: 28%;
+	width: 100%;
 }
 
 .card {
-	padding: 38px 26px;
+	padding: 68px 56px;
 	border: 3px solid var(--accent-1);
 	border-radius: 15px;
+	cursor: pointer;
+	transition: .2s background-color;
 }
 
 .card-header {
@@ -23,18 +34,22 @@
 	color: var(--color-background);
 	background-color: var(--accent-1);
 	padding: 15px;
-	font-size: 20px;
+	font-size: 35px;
 	border-radius: 15px;
 }
 
 .card-title {
-	font-size: 30px;
+	font-size: 45px;
 	font-weight: 600;
 	color: var(--accent-1);
 }
 
 .card-desc {
-	font-size: 15px;
+	font-size: 20px;
 	color: var(--text-1);
 	margin-top: 15px;
+}
+
+.card:hover {
+	background-color: var(--accent-2);
 }
