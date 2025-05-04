@@ -1,4 +1,4 @@
-# Simple Discord Bot Panel in Discord.PY
+# Simple Discord Bot Panel in Python
 
 ## `📁` Project Structure
 
