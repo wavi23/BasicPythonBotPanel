@@ -1,29 +1,126 @@
 nav {
-	background-color: var(--color-foreground);
+	backdrop-filter: blur(10px);
 	display: flex;
-	align-items: center;
 	justify-content: space-between;
-	padding: 10px 20px;
+	align-items: center;
+	padding: 30px 55px;
+	position: sticky;
+	top: 0;
 }
 
 nav ul {
-	padding: 0;
-	margin: 0;
-}
-
-nav li {
-	display: inline-block;
-	padding: 15px 25px;
-	transition: .2s ease;
+	display: flex;
+	gap: 2.5rem;
 }
 
 nav li a {
 	text-decoration: none;
-	color: var(--text-0);
+	color: var(--text-color);
+	transition: all 0.3s ease-in-out;
+	position: relative;
+	z-index: 1;
+	letter-spacing: 1px;
 }
 
-nav li:hover {
-	background-color: var(--accent-2);
-	color: var(--text-4);
+nav ul li a:hover {
+	color: var(--accent-1);
+	text-shadow: 0 0 5px var(--accent-1);
+	text-shadow: 0 0 15px var(--accent-1);
+	text-shadow: 0 0 25px var(--accent-1);
+	text-shadow: 0 0 35px var(--accent-1);
+	text-shadow: 0 0 45px var(--accent-1);
+	text-shadow: 0 0 55px var(--accent-1);
+}
+
+nav ul li a::after {
+	content: '';
+	display: block;
+	width: 0;
+	height: 1px;
+	background-color: var(--accent-1);
+	transition: all 0.3s ease-in-out;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+nav ul li a:hover::after {
+	width: 100%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+nav .logo a {
+	color: var(--text-0);
+	text-decoration: none;
+	letter-spacing: 4px;
+	font-weight: 700;
+	transition: all 0.3s ease-in-out;
+	width: 100px;
+}
+
+nav .logo a:hover {
+	color: var(--accent-1);
+	text-decoration: none;
+	font-weight: 700;
+	text-shadow: 0 0 15px var(--accent-1);
+}
+
+nav .nav-btn {
+	border: solid 1px var(--accent-1);
+	background-color: var(--color-background);
+	color: var(--accent-1);
+	padding: 10px 22px;
+	border-radius: 17px;
+	text-decoration: none;
+	transition: all 0.3s ease-in-out;
+	outline: 0;
 	cursor: pointer;
+	font-weight: 600;
+	letter-spacing: 1px;
+}
+
+nav .nav-btn i {
+	border: none;
+	background-color: var(--color-background);
+	color: var(--accent-1);
+	padding: 6px;
+	border-radius: 6px;
+	margin-right: 6px;
+	text-decoration: none;
+	transition: all 0.3s ease-in-out;
+	outline: 0;
+}
+
+nav .nav-btn:hover {
+	background-color: var(--accent-1);
+	color: var(--color-background);
+}
+
+nav .nav-btn-link {
+	border-radius: 17px;
+}
+
+nav #menuButton {
+	background-color: transparent;
+	border: 1px solid var(--accent-1);
+	font-size: 20px;
+	padding: 7px 14px;
+	border-radius: 8px;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+	outline: 0;
+	color: var(--accent-1);
+	display: none;
+	position: relative;
+	z-index: 1;
+}
+
+nav #menuButton:hover {
+	background-color: var(--accent-1);
+	color: var(--color-background);
+}
+
+nav #menuButton:focus {
+	outline: none;
 }
