@@ -2,6 +2,7 @@
 @import url('./icons.css');
 @import url('./config.css');
 @import url('./cards.css');
+@import url('./sidebar.css');
 
 * {
 	margin: 0;
